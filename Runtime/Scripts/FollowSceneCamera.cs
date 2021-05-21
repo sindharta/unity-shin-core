@@ -30,22 +30,21 @@ public class FollowSceneCamera : MonoBehaviour {
 			return;
 
 		Transform gameCameraT = gameCamera.transform;
-		
-		for(int i=0;i<sceneViews.Count;++i) {	
-			UnityEditor.SceneView sceneView = (UnityEditor.SceneView) sceneViews[i];
-			if(null==sceneView)
-				continue;
-			
-			Camera curSceneCam = sceneView.camera;
-			if (null==curSceneCam)
-				continue;
-
-			Transform curSceneCamT = curSceneCam.transform;			
-			gameCamera.orthographic = sceneView.orthographic;
-			gameCameraT.position    = curSceneCamT.position;
-			gameCameraT.rotation    = curSceneCamT.rotation;
+		if (sceneViews.Count <= 0)
 			return;
-		}	
+		
+		UnityEditor.SceneView sceneView = (UnityEditor.SceneView) sceneViews[0];
+		if(null==sceneView)
+			return;
+		
+		Camera curSceneCam = sceneView.camera;
+		if (null==curSceneCam)
+			return;
+
+		Transform curSceneCamT = curSceneCam.transform;			
+		gameCamera.orthographic = sceneView.orthographic;
+		gameCameraT.position    = curSceneCamT.position;
+		gameCameraT.rotation    = curSceneCamT.rotation;
 	}
  
  
