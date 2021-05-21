@@ -1,5 +1,4 @@
-﻿//Draw reference from http://wiki.unity3d.com/index.php/SceneViewCameraFollower
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 [ExecuteInEditMode]
@@ -56,3 +55,6 @@ public class FollowSceneCamera : MonoBehaviour {
 	[SerializeField] private Camera m_gameViewCamera;
 
 }
+
+
+//References: http://wiki.unity3d.com/index.php/SceneViewCameraFollower
