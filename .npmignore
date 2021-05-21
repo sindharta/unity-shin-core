@@ -18,4 +18,5 @@ build.sh.meta
 build.bat
 build.bat.meta
 
-UnityUtilities~/**
+Scripts~/**
+ShinCore~/**
