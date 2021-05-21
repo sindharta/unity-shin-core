@@ -1,5 +1,5 @@
 {
-    "name": "Org.Shin.Core.Runtime",
+    "name": "Shin.Core.Runtime",
     "rootNamespace": "",
     "references": [],
     "includePlatforms": [],
