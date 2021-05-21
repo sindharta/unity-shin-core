@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace org.shin.utilities {
+namespace Shin.Core {
 
 public static class CollectionUtility
 {
