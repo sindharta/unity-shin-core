@@ -18,7 +18,7 @@ public class FollowSceneCamera : MonoBehaviour {
 	
 //----------------------------------------------------------------------------------------------------------------------	
  
-	//Make Camera.main follow the first SceneView camera
+	//Make the specified camera (or Camera.main) follow the first SceneView camera
 	void Follow() {
 		ArrayList sceneViews = UnityEditor.SceneView.sceneViews;
 		if(sceneViews.Count == 0) 
