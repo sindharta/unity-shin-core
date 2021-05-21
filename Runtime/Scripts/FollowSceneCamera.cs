@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[ExecuteInEditMode]
+[ExecuteAlways]
 public class FollowSceneCamera : MonoBehaviour {
 
 #if UNITY_EDITOR
