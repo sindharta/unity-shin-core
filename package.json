@@ -2,7 +2,7 @@
 	"name": "org.shin.core",
 	"displayName":"Shin Core",
 	"version": "0.0.1-preview",
-	"unity": "2019.2",
+	"unity": "2020.3",
 	"description": "Various Unity utilities",
 	"dependencies": {
 	}
