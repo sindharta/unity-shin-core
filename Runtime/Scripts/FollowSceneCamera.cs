@@ -25,7 +25,8 @@ public class FollowSceneCamera : MonoBehaviour {
 		if(sceneViews.Count == 0) 
 			return;
 
-		Camera gameCamera = Camera.main;
+		
+		Camera gameCamera = (null != m_gameViewCamera) ? m_gameViewCamera : Camera.main;
 		if (null == gameCamera)
 			return;
 
@@ -49,4 +50,9 @@ public class FollowSceneCamera : MonoBehaviour {
  
  
 #endif
+	
+//----------------------------------------------------------------------------------------------------------------------
+
+	[SerializeField] private Camera m_gameViewCamera;
+
 }
