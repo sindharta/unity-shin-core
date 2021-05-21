@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace org.shin.utilities {
+namespace Shin.Core.Editor {
 
 public static class UnityEditorUtility  {
 
